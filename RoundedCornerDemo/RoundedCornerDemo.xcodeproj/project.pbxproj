@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED275C281E2A16B30031D1A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED275C271E2A16B30031D1A0 /* main.m */; };
+		ED275C2B1E2A16B30031D1A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED275C2A1E2A16B30031D1A0 /* AppDelegate.m */; };
+		ED275C2E1E2A16B30031D1A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED275C2D1E2A16B30031D1A0 /* ViewController.m */; };
+		ED275C311E2A16B30031D1A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED275C2F1E2A16B30031D1A0 /* Main.storyboard */; };
+		ED275C331E2A16B30031D1A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED275C321E2A16B30031D1A0 /* Assets.xcassets */; };
+		ED275C361E2A16B30031D1A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED275C341E2A16B30031D1A0 /* LaunchScreen.storyboard */; };
+		ED275C3F1E2A16CE0031D1A0 /* UIView+RounderCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = ED275C3E1E2A16CE0031D1A0 /* UIView+RounderCorner.m */; };
+		ED275C411E2A17900031D1A0 /* img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED275C401E2A17900031D1A0 /* img.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED275C231E2A16B30031D1A0 /* RoundedCornerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundedCornerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED275C271E2A16B30031D1A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED275C291E2A16B30031D1A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ED275C2A1E2A16B30031D1A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ED275C2C1E2A16B30031D1A0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ED275C2D1E2A16B30031D1A0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ED275C301E2A16B30031D1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED275C321E2A16B30031D1A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED275C351E2A16B30031D1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED275C371E2A16B30031D1A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED275C3D1E2A16CE0031D1A0 /* UIView+RounderCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+RounderCorner.h"; path = "../../UIView+RounderCorner.h"; sourceTree = "<group>"; };
+		ED275C3E1E2A16CE0031D1A0 /* UIView+RounderCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+RounderCorner.m"; path = "../../UIView+RounderCorner.m"; sourceTree = "<group>"; };
+		ED275C401E2A17900031D1A0 /* img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED275C201E2A16B30031D1A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED275C1A1E2A16B30031D1A0 = {
+			isa = PBXGroup;
+			children = (
+				ED275C251E2A16B30031D1A0 /* RoundedCornerDemo */,
+				ED275C241E2A16B30031D1A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED275C241E2A16B30031D1A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED275C231E2A16B30031D1A0 /* RoundedCornerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED275C251E2A16B30031D1A0 /* RoundedCornerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				ED275C291E2A16B30031D1A0 /* AppDelegate.h */,
+				ED275C2A1E2A16B30031D1A0 /* AppDelegate.m */,
+				ED275C2C1E2A16B30031D1A0 /* ViewController.h */,
+				ED275C2D1E2A16B30031D1A0 /* ViewController.m */,
+				ED275C3D1E2A16CE0031D1A0 /* UIView+RounderCorner.h */,
+				ED275C3E1E2A16CE0031D1A0 /* UIView+RounderCorner.m */,
+				ED275C401E2A17900031D1A0 /* img.jpg */,
+				ED275C2F1E2A16B30031D1A0 /* Main.storyboard */,
+				ED275C321E2A16B30031D1A0 /* Assets.xcassets */,
+				ED275C341E2A16B30031D1A0 /* LaunchScreen.storyboard */,
+				ED275C371E2A16B30031D1A0 /* Info.plist */,
+				ED275C261E2A16B30031D1A0 /* Supporting Files */,
+			);
+			path = RoundedCornerDemo;
+			sourceTree = "<group>";
+		};
+		ED275C261E2A16B30031D1A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED275C271E2A16B30031D1A0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED275C221E2A16B30031D1A0 /* RoundedCornerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED275C3A1E2A16B30031D1A0 /* Build configuration list for PBXNativeTarget "RoundedCornerDemo" */;
+			buildPhases = (
+				ED275C1F1E2A16B30031D1A0 /* Sources */,
+				ED275C201E2A16B30031D1A0 /* Frameworks */,
+				ED275C211E2A16B30031D1A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoundedCornerDemo;
+			productName = RoundedCornerDemo;
+			productReference = ED275C231E2A16B30031D1A0 /* RoundedCornerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED275C1B1E2A16B30031D1A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = prodream;
+				TargetAttributes = {
+					ED275C221E2A16B30031D1A0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = ED275C1E1E2A16B30031D1A0 /* Build configuration list for PBXProject "RoundedCornerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED275C1A1E2A16B30031D1A0;
+			productRefGroup = ED275C241E2A16B30031D1A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED275C221E2A16B30031D1A0 /* RoundedCornerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED275C211E2A16B30031D1A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED275C361E2A16B30031D1A0 /* LaunchScreen.storyboard in Resources */,
+				ED275C331E2A16B30031D1A0 /* Assets.xcassets in Resources */,
+				ED275C311E2A16B30031D1A0 /* Main.storyboard in Resources */,
+				ED275C411E2A17900031D1A0 /* img.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED275C1F1E2A16B30031D1A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED275C2E1E2A16B30031D1A0 /* ViewController.m in Sources */,
+				ED275C3F1E2A16CE0031D1A0 /* UIView+RounderCorner.m in Sources */,
+				ED275C2B1E2A16B30031D1A0 /* AppDelegate.m in Sources */,
+				ED275C281E2A16B30031D1A0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED275C2F1E2A16B30031D1A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED275C301E2A16B30031D1A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED275C341E2A16B30031D1A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED275C351E2A16B30031D1A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED275C381E2A16B30031D1A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ED275C391E2A16B30031D1A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED275C3B1E2A16B30031D1A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RoundedCornerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prodream.RoundedCornerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ED275C3C1E2A16B30031D1A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RoundedCornerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prodream.RoundedCornerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED275C1E1E2A16B30031D1A0 /* Build configuration list for PBXProject "RoundedCornerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED275C381E2A16B30031D1A0 /* Debug */,
+				ED275C391E2A16B30031D1A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED275C3A1E2A16B30031D1A0 /* Build configuration list for PBXNativeTarget "RoundedCornerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED275C3B1E2A16B30031D1A0 /* Debug */,
+				ED275C3C1E2A16B30031D1A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED275C1B1E2A16B30031D1A0 /* Project object */;
+}
