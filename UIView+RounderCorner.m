@@ -20,7 +20,7 @@ static const char* KEY_CORNER_PARAMS = "pd_key_corner_param";
     //record paramters
     objc_setAssociatedObject(self, KEY_CORNER_PARAMS, @[@(radius), cornerColor, @(borderWidth), borderColor], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
-    if (self.superview) {
+    if (!self.superview) {
         //delay do this
         return;
     }
@@ -44,10 +44,11 @@ static const char* KEY_CORNER_PARAMS = "pd_key_corner_param";
 
 - (void)layoutSublayersOfLayer:(CALayer *)layer {
     if (layer == self.layer) {
-        CAShapeLayer* cornerLayer = objc_getAssociatedObject(self, KEY_CORNER_LAYER);
-        if (cornerLayer) {
-            NSArray* params = objc_getAssociatedObject(self, KEY_CORNER_PARAMS);
-            if (params.count == 4) {
+        NSArray* params = objc_getAssociatedObject(self, KEY_CORNER_PARAMS);
+        if (params.count >= 2) {
+            if (params.count == 2) {
+                [self addRoundedCorner:[params[0] floatValue] cornerColor:params[1] borderWidth:0 borderColor:nil];
+            } else if (params.count == 4) {
                 [self addRoundedCorner:[params[0] floatValue] cornerColor:params[1] borderWidth:[params[2] floatValue] borderColor:params[3]];
             }
         }
