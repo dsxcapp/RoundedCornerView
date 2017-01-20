@@ -15,8 +15,18 @@ static const char* KEY_BORDER_LAYER = "pd_key_border_layer";
 static const char* KEY_CORNER_LAYER = "pd_key_corner_layer";
 static const char* KEY_CORNER_PARAMS = "pd_key_corner_param";
 
++ (void)load {
+    SEL originalSelector = @selector(layoutSublayersOfLayer:);
+    SEL swizzledSelector = NSSelectorFromString([@"pd_rounderCorner_" stringByAppendingString:NSStringFromSelector(originalSelector)]);
+    Method originalMethod = class_getInstanceMethod(self, originalSelector);
+    Method swizzledMethod = class_getInstanceMethod(self, swizzledSelector);
+    method_exchangeImplementations(originalMethod, swizzledMethod);
+}
 
 - (void)addRoundedCorner:(float)radius cornerColor:(UIColor*)cornerColor borderWidth:(float)borderWidth borderColor:(UIColor*)borderColor {
+    if (cornerColor == nil ||radius == 0) {
+        return;
+    }
     //record paramters
     objc_setAssociatedObject(self, KEY_CORNER_PARAMS, @[@(radius), cornerColor, @(borderWidth), borderColor], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
@@ -42,7 +52,8 @@ static const char* KEY_CORNER_PARAMS = "pd_key_corner_param";
     
 }
 
-- (void)layoutSublayersOfLayer:(CALayer *)layer {
+
+- (void)pd_rounderCorner_layoutSublayersOfLayer:(CALayer *)layer {
     if (layer == self.layer) {
         NSArray* params = objc_getAssociatedObject(self, KEY_CORNER_PARAMS);
         if (params.count >= 2) {
@@ -53,6 +64,7 @@ static const char* KEY_CORNER_PARAMS = "pd_key_corner_param";
             }
         }
     }
+    [self pd_rounderCorner_layoutSublayersOfLayer:layer];
 }
 
 /**
